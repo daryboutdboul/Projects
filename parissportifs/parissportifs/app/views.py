@@ -3,7 +3,7 @@ Definition of views.
 """
 
 from django.shortcuts import render
-from django.http import HttpRequest
+from django.http import HttpRequest,HttpResponse
 from django.template import RequestContext
 from datetime import datetime
 
@@ -47,3 +47,6 @@ def about(request):
             'year':datetime.now().year,
         })
     )
+
+def index(Request):
+    return HttpResponse('Paris index list')

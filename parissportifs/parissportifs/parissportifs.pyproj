@@ -6,6 +6,7 @@
     <RootNamespace>parissportifs</RootNamespace>
     <InterpreterId>{2df5b8d5-c686-41f3-9fa3-e8258b1d031b}</InterpreterId>
     <InterpreterVersion>2.7</InterpreterVersion>
+    <Environment>DJANGO_SETTINGS_MODULE=parissportifs.settings</Environment>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -13,7 +14,7 @@
     <ProjectGuid>9e3fc4c0-ea1d-48a8-8726-c4d2d729d037</ProjectGuid>
     <ProjectHome>.</ProjectHome>
     <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
-    <StartupFile>manage.py</StartupFile>
+    <StartupFile>test.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -30,6 +31,16 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app\forms.py" />
+    <Compile Include="app\mesparis\admin.py" />
+    <Compile Include="app\mesparis\apps.py" />
+    <Compile Include="app\mesparis\migrations\__init__.py" />
+    <Compile Include="app\mesparis\models.py" />
+    <Compile Include="app\mesparis\tests.py" />
+    <Compile Include="app\mesparis\urls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="app\mesparis\views.py" />
+    <Compile Include="app\mesparis\__init__.py" />
     <Compile Include="app\models.py" />
     <Compile Include="app\tests.py" />
     <Compile Include="app\views.py" />
@@ -39,9 +50,14 @@
     <Compile Include="parissportifs\settings.py" />
     <Compile Include="parissportifs\urls.py" />
     <Compile Include="parissportifs\wsgi.py" />
+    <Compile Include="test.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="app\" />
+    <Folder Include="app\mesparis\" />
+    <Folder Include="app\mesparis\migrations\" />
     <Folder Include="app\static\" />
     <Folder Include="app\static\app\" />
     <Folder Include="app\static\app\content\" />

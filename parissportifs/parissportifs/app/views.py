@@ -47,6 +47,3 @@ def about(request):
             'year':datetime.now().year,
         })
     )
-
-def index(Request):
-    return HttpResponse('Paris index list')
